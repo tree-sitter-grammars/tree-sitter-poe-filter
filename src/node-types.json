@@ -1,0 +1,471 @@
+[
+  {
+    "type": "action",
+    "named": true,
+    "fields": {
+      "alpha": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "blue": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "green": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "id": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "red": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "size": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "volume": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "colour",
+          "named": true
+        },
+        {
+          "type": "disable",
+          "named": true
+        },
+        {
+          "type": "file",
+          "named": true
+        },
+        {
+          "type": "name",
+          "named": true
+        },
+        {
+          "type": "shape",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "action",
+          "named": true
+        },
+        {
+          "type": "condition",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "colour",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "condition",
+    "named": true,
+    "fields": {
+      "class": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      },
+      "enchantment": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      },
+      "modifier": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      },
+      "type": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "influence",
+          "named": true
+        },
+        {
+          "type": "name",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "quality",
+          "named": true
+        },
+        {
+          "type": "rarity",
+          "named": true
+        },
+        {
+          "type": "sockets",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "continue",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "file",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "filter",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "influence",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "quality",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "rarity",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "shape",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "sockets",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "string",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "Anomalous",
+    "named": false
+  },
+  {
+    "type": "Blue",
+    "named": false
+  },
+  {
+    "type": "Brown",
+    "named": false
+  },
+  {
+    "type": "Circle",
+    "named": false
+  },
+  {
+    "type": "Continue",
+    "named": false
+  },
+  {
+    "type": "Cross",
+    "named": false
+  },
+  {
+    "type": "Crusader",
+    "named": false
+  },
+  {
+    "type": "Cyan",
+    "named": false
+  },
+  {
+    "type": "Diamond",
+    "named": false
+  },
+  {
+    "type": "Divergent",
+    "named": false
+  },
+  {
+    "type": "Elder",
+    "named": false
+  },
+  {
+    "type": "Green",
+    "named": false
+  },
+  {
+    "type": "Grey",
+    "named": false
+  },
+  {
+    "type": "Hexagon",
+    "named": false
+  },
+  {
+    "type": "Hide",
+    "named": false
+  },
+  {
+    "type": "Hunter",
+    "named": false
+  },
+  {
+    "type": "Kite",
+    "named": false
+  },
+  {
+    "type": "Magic",
+    "named": false
+  },
+  {
+    "type": "Moon",
+    "named": false
+  },
+  {
+    "type": "None",
+    "named": false
+  },
+  {
+    "type": "Normal",
+    "named": false
+  },
+  {
+    "type": "Orange",
+    "named": false
+  },
+  {
+    "type": "Pentagon",
+    "named": false
+  },
+  {
+    "type": "Phantasmal",
+    "named": false
+  },
+  {
+    "type": "Pink",
+    "named": false
+  },
+  {
+    "type": "Purple",
+    "named": false
+  },
+  {
+    "type": "Raindrop",
+    "named": false
+  },
+  {
+    "type": "Rare",
+    "named": false
+  },
+  {
+    "type": "Red",
+    "named": false
+  },
+  {
+    "type": "Redeemer",
+    "named": false
+  },
+  {
+    "type": "Shaper",
+    "named": false
+  },
+  {
+    "type": "Show",
+    "named": false
+  },
+  {
+    "type": "Square",
+    "named": false
+  },
+  {
+    "type": "Star",
+    "named": false
+  },
+  {
+    "type": "Superior",
+    "named": false
+  },
+  {
+    "type": "Temp",
+    "named": false
+  },
+  {
+    "type": "Triangle",
+    "named": false
+  },
+  {
+    "type": "Unique",
+    "named": false
+  },
+  {
+    "type": "UpsideDownHouse",
+    "named": false
+  },
+  {
+    "type": "Warlord",
+    "named": false
+  },
+  {
+    "type": "White",
+    "named": false
+  },
+  {
+    "type": "Yellow",
+    "named": false
+  },
+  {
+    "type": "boolean",
+    "named": true
+  },
+  {
+    "type": "comment",
+    "named": true
+  },
+  {
+    "type": "disable",
+    "named": true
+  },
+  {
+    "type": "name",
+    "named": true
+  },
+  {
+    "type": "number",
+    "named": true
+  },
+  {
+    "type": "operator",
+    "named": true
+  }
+]

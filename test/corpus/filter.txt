@@ -1,0 +1,158 @@
+==========
+Show block
+==========
+
+Show # $type->6l $tier->arm
+  Corrupted False
+  LinkedSockets 6
+  Rarity Normal Magic Rare
+  Class "Body Armours"
+  SetFontSize 45
+  SetTextColor 200 0 0 255
+  SetBorderColor 200 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayAlertSound 6 300
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+----
+
+(filter
+  (block
+    (comment)
+    (condition
+      (name)
+      (boolean))
+    (condition
+      (name)
+      (number))
+    (condition
+      (name)
+      (rarity)
+      (rarity)
+      (rarity))
+    (condition
+      (name)
+      class: (string))
+    (action
+      (name)
+      size: (number))
+    (action
+      (name)
+      red: (number)
+      green: (number)
+      blue: (number)
+      alpha: (number))
+    (action
+      (name)
+      red: (number)
+      green: (number)
+      blue: (number)
+      alpha: (number))
+    (action
+      (name)
+      red: (number)
+      green: (number)
+      blue: (number)
+      alpha: (number))
+    (action
+      (name)
+      id: (number)
+      volume: (number))
+    (action
+      (name)
+      (colour))
+    (action
+      (name)
+      size: (number)
+      (colour)
+      (shape))))
+
+==========
+Hide block
+==========
+
+Hide # $type->hidelayer $tier->normalmagicendgame
+  AreaLevel >= 68
+  Rarity Normal Magic
+  Class "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Flask" "Gloves" "Helmets" "One Hand" "Quivers" "Rings" "Rune Dagger" "Sceptres" "Shields" "Staves" "Two Hand" "Wands" "Warstaves"
+  SetFontSize 18
+  SetBorderColor 0 0 0 0
+  SetBackgroundColor 0 0 0 0
+  DisableDropSound True
+
+----
+
+(filter
+  (block
+    (comment)
+    (condition
+      (name)
+      (operator)
+      (number))
+    (condition
+      (name)
+      (rarity)
+      (rarity))
+    (condition
+      (name)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string)
+      class: (string))
+    (action
+      (name)
+      size: (number))
+    (action
+      (name)
+      red: (number)
+      green: (number)
+      blue: (number)
+      alpha: (number))
+    (action
+      (name)
+      red: (number)
+      green: (number)
+      blue: (number)
+      alpha: (number))
+    (action
+      (name)
+      (boolean))))
+
+======
+Errors
+======
+
+Show
+  Rarity " Normal"
+
+Hide
+  HasInfluence "Shaper
+
+------
+
+(filter
+  (block
+    (ERROR
+      (name)))
+  (block
+    (condition
+      (name)
+      (influence
+        (MISSING """)))))
