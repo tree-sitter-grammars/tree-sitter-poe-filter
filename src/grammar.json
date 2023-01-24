@@ -33,6 +33,10 @@
               {
                 "type": "STRING",
                 "value": "Hide"
+              },
+              {
+                "type": "STRING",
+                "value": "Minimal"
               }
             ]
           },

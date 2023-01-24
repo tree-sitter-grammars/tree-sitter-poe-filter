@@ -31,7 +31,7 @@ module.exports = grammar({
     ),
 
     block: $ => prec.right(seq(
-      choice('Show', 'Hide'),
+      choice('Show', 'Hide', 'Minimal'),
       $._eol,
       repeat1(choice(
         $.condition,
