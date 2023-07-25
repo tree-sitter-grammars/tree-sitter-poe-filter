@@ -164,6 +164,11 @@ module.exports = grammar({
         repeat1(seq($._space, $.quality))
       ),
       seq(
+        alias('HasCruciblePassiveTree', $.name),
+        $._space,
+        $.boolean
+      ),
+      seq(
         alias('HasEaterOfWorldsImplicit', $.name),
         $._space,
         $._quantity
@@ -183,6 +188,11 @@ module.exports = grammar({
           $._space,
           field('modifier', $.string)
         ))
+      ),
+      seq(
+        alias('HasImplicitMod', $.name),
+        $._space,
+        $.boolean
       ),
       seq(
         alias('HasInfluence', $.name),

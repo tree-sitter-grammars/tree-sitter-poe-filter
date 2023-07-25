@@ -708,6 +708,28 @@
                   "type": "ALIAS",
                   "content": {
                     "type": "STRING",
+                    "value": "HasCruciblePassiveTree"
+                  },
+                  "named": true,
+                  "value": "name"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "_space"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "boolean"
+                }
+              ]
+            },
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "ALIAS",
+                  "content": {
+                    "type": "STRING",
                     "value": "HasEaterOfWorldsImplicit"
                   },
                   "named": true,
@@ -830,6 +852,28 @@
                       }
                     ]
                   }
+                }
+              ]
+            },
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "ALIAS",
+                  "content": {
+                    "type": "STRING",
+                    "value": "HasImplicitMod"
+                  },
+                  "named": true,
+                  "value": "name"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "_space"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "boolean"
                 }
               ]
             },
