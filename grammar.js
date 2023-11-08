@@ -2,9 +2,6 @@
  * @file Tree-sitter grammar definition
  * @author ObserverOfTime
  * @license MIT
- * @see {@link https://www.pathofexile.com/item-filter/about|official syntax spec}
- * @see {@link https://pathofexile.fandom.com/wiki/Guide:Item_filter#Syntax|wiki guide}
- * @see {@link https://www.filterblade.xyz/|filter generator}
  */
 
 const I = token.immediate;
