@@ -12,6 +12,10 @@
           },
           {
             "type": "SYMBOL",
+            "name": "import"
+          },
+          {
+            "type": "SYMBOL",
             "name": "_eol"
           }
         ]
@@ -70,6 +74,44 @@
           }
         ]
       }
+    },
+    "import": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Import"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_space"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "file"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "SYMBOL",
+                  "name": "_space"
+                },
+                {
+                  "type": "STRING",
+                  "value": "Optional"
+                }
+              ]
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
     },
     "condition": {
       "type": "SEQ",
@@ -2183,6 +2225,28 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "ALIAS",
+                  "content": {
+                    "type": "STRING",
+                    "value": "TransfiguredGem"
+                  },
+                  "named": true,
+                  "value": "name"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "_space"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "boolean"
+                }
+              ]
             }
           ]
         },
@@ -2232,6 +2296,10 @@
             {
               "type": "STRING",
               "value": "!"
+            },
+            {
+              "type": "STRING",
+              "value": "!="
             },
             {
               "type": "STRING",

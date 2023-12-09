@@ -152,6 +152,22 @@ Minimal
       (string))
     (continue)))
 
+
+======
+Import
+======
+
+Import "MyCustomRules.filter"
+Import "MyOptionalRules.filter" Optional
+
+------
+
+(filter
+  (import
+    (file))
+  (import
+    (file)))
+
 ======
 Errors
 ======

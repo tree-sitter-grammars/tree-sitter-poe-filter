@@ -24,7 +24,7 @@ module.exports = grammar({
 
   rules: {
     filter: $ => repeat(
-      choice($.block, $._eol)
+      choice($.block, $.import, $._eol)
     ),
 
     block: $ => prec.right(seq(
@@ -37,6 +37,16 @@ module.exports = grammar({
         $._eol
       ))
     )),
+
+    import: $ => seq(
+      'Import',
+      $._space,
+      $.file,
+      optional(seq(
+        $._space,
+        'Optional'
+      ))
+    ),
 
     condition: $ => seq(choice(
       seq(
@@ -156,6 +166,7 @@ module.exports = grammar({
         $._space,
         $._quantity
       ),
+      // NOTE: DELETED
       seq(
         alias('GemQualityType', $.name),
         repeat1(seq($._space, $.quality))
@@ -317,6 +328,7 @@ module.exports = grammar({
           field('volume', $._volume)
         ))
       ),
+      // TODO: support multiple files
       seq(
         alias('CustomAlertSound', $.name),
         $._space,
@@ -422,6 +434,11 @@ module.exports = grammar({
           field('alpha', $._color)
         ))
       ),
+      seq(
+        alias('TransfiguredGem', $.name),
+        $._space,
+        $.boolean
+      ),
     ), $._eol),
 
     continue: $ => seq('Continue', $._eol),
@@ -431,7 +448,7 @@ module.exports = grammar({
     ),
 
     _equal_operator: $ => alias(
-      token(choice('=', '!', '==')), $.operator
+      token(choice('=', '!', '!=', '==')), $.operator
     ),
 
     _range_operator: $ => alias(

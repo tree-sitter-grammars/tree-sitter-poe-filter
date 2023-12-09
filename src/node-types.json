@@ -238,6 +238,25 @@
         {
           "type": "block",
           "named": true
+        },
+        {
+          "type": "import",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "import",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "file",
+          "named": true
         }
       ]
     }
@@ -341,6 +360,10 @@
     "named": false
   },
   {
+    "type": "Import",
+    "named": false
+  },
+  {
     "type": "Kite",
     "named": false
   },
@@ -362,6 +385,10 @@
   },
   {
     "type": "Normal",
+    "named": false
+  },
+  {
+    "type": "Optional",
     "named": false
   },
   {
