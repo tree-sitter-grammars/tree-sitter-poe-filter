@@ -1,4 +1,4 @@
-#include <tree_sitter/parser.h>
+#include "tree_sitter/parser.h"
 
 #if defined(__GNUC__) || defined(__clang__)
 #pragma GCC diagnostic push
@@ -24,7 +24,7 @@
 #define MAX_ALIAS_SEQUENCE_LENGTH 10
 #define PRODUCTION_ID_COUNT 26
 
-enum {
+enum ts_symbol_identifiers {
   anon_sym_Show = 1,
   anon_sym_Hide = 2,
   anon_sym_Minimal = 3,
@@ -1176,7 +1176,7 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
   },
 };
 
-enum {
+enum ts_field_identifiers {
   field_alpha = 1,
   field_blue = 2,
   field_class = 3,
@@ -6206,7 +6206,7 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
       END_STATE();
     case 1021:
       ACCEPT_TOKEN(aux_sym_file_token1);
-      if ((0 <= lookahead && lookahead <= '\t') ||
+      if (!eof && (0 <= lookahead && lookahead <= '\t') ||
           (11 <= lookahead && lookahead <= 31) ||
           lookahead == '"' ||
           lookahead == '*' ||
