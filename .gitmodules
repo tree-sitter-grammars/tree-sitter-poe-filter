@@ -1,0 +1,4 @@
+[submodule "NeverSink-Filter"]
+  path = examples/NeverSink-Filter
+  url = https://github.com/NeverSinkDev/NeverSink-Filter
+  shallow = true
