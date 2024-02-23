@@ -30,6 +30,7 @@
   "tree-sitter": [
     {
       "scope": "text.poe_filter",
+      "highlights": "queries/highlights.scm",
       "file-types": [
         "filter"
       ]

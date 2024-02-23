@@ -1,0 +1,21 @@
+Show
+# <- @module
+    Class Ring Amulet
+#         ^^^^ @string
+#              ^^^^^^ @string
+#   ^^^^^ @keyword
+    BaseType Gold
+#   ^^^^^^^^ @keyword
+#            ^^^^ @string
+    Rarity Rare
+#   ^^^^^^ @keyword
+#          ^^^^ @constant.builtin
+    ItemLevel >= 75
+#   ^^^^^^^^^ @keyword
+#             ^^ @operator
+#                ^^ @number
+    SetBorderColor 255 255 0
+#   ^^^^^^^^^^^^^^ @keyword
+#                  ^^^ @number
+#                      ^^^ @number
+#                          ^ @number
