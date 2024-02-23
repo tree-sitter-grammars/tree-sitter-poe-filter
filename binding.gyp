@@ -12,10 +12,10 @@
       ],
       "cflags_c": [
         "-std=c99",
-        "-Wno-unused-but-set-variable"
+        "-Wno-parentheses"
       ],
       "cflags_cc": [
-        "-Wno-cast-function-type"
+        "-Wno-cast-function-type",
       ]
     }
   ]
