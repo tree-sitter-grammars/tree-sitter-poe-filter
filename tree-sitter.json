@@ -1,0 +1,29 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "poe_filter",
+      "camelcase": "PoEFilter",
+      "scope": "text.poe_filter",
+      "path": ".",
+      "file-types": [
+        "filter"
+      ],
+      "highlights": "queries/highlights.scm"
+    }
+  ],
+  "metadata": {
+    "version": "0.4.0",
+    "license": "MIT",
+    "description": "PoE item filter grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "ObserverOfTime",
+        "email": "chronobserver@disroot.org"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-poe-filter"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: sunday
+    commit-message:
+      prefix: ci
+    labels:
+      - dependencies
+    groups:
+      actions:
+        patterns: ["*"]
+
+  - package-ecosystem: gitsubmodule
+    directory: /
+    schedule:
+      interval: weekly
+      day: sunday
+    commit-message:
+      prefix: test(deps)
+    labels:
+      - dependencies
+    groups:
+      actions:
+        patterns: ["*"]
