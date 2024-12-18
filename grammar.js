@@ -4,6 +4,8 @@
  * @license MIT
  */
 
+/// <reference types="tree-sitter-cli/dsl" />
+
 const I = token.immediate;
 
 /** @param {RuleOrLiteral} rule */
@@ -292,9 +294,19 @@ module.exports = grammar({
         $.boolean
       ),
       seq(
+        alias('TransfiguredGem', $.name),
+        $._space,
+        $.boolean
+      ),
+      seq(
         alias('UberBlightedMap', $.name),
         $._space,
         $.boolean
+      ),
+      seq(
+        alias('WaystoneTier', $.name),
+        $._space,
+        $._quantity
       ),
       seq(
         alias('Width', $.name),
@@ -434,11 +446,6 @@ module.exports = grammar({
           field('alpha', $._color)
         ))
       ),
-      seq(
-        alias('TransfiguredGem', $.name),
-        $._space,
-        $.boolean
-      ),
     ), $._eol),
 
     continue: $ => seq('Continue', $._eol),
@@ -488,11 +495,11 @@ module.exports = grammar({
     ),
 
     string: _ => choice(
-      seq(I('"'), I(/[-\p{L}:,' ]+/), I('"')),
-      /[-\p{L}:,']+/
+      seq(I('"'), I(/[-\p{L}:,' ]+/u), I('"')),
+      /[-\p{L}:,']+/u
     ),
 
-    file: _ => seq(I('"'), I(/[^\p{Cc}<>"|?*]+/), I('"')),
+    file: _ => seq(I('"'), I(/[^\p{Cc}<>"|?*]+/u), I('"')),
 
     _quantity: $ => seq(optional($._operator), $.number),
 

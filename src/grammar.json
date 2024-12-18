@@ -1418,6 +1418,28 @@
                   "type": "ALIAS",
                   "content": {
                     "type": "STRING",
+                    "value": "TransfiguredGem"
+                  },
+                  "named": true,
+                  "value": "name"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "_space"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "boolean"
+                }
+              ]
+            },
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "ALIAS",
+                  "content": {
+                    "type": "STRING",
                     "value": "UberBlightedMap"
                   },
                   "named": true,
@@ -1430,6 +1452,28 @@
                 {
                   "type": "SYMBOL",
                   "name": "boolean"
+                }
+              ]
+            },
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "ALIAS",
+                  "content": {
+                    "type": "STRING",
+                    "value": "WaystoneTier"
+                  },
+                  "named": true,
+                  "value": "name"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "_space"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "_quantity"
                 }
               ]
             },
@@ -2226,28 +2270,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "ALIAS",
-                  "content": {
-                    "type": "STRING",
-                    "value": "TransfiguredGem"
-                  },
-                  "named": true,
-                  "value": "name"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "_space"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "boolean"
-                }
-              ]
             }
           ]
         },
@@ -2750,7 +2772,8 @@
               "type": "IMMEDIATE_TOKEN",
               "content": {
                 "type": "PATTERN",
-                "value": "[-\\p{L}:,' ]+"
+                "value": "[-\\p{L}:,' ]+",
+                "flags": "u"
               }
             },
             {
@@ -2764,7 +2787,8 @@
         },
         {
           "type": "PATTERN",
-          "value": "[-\\p{L}:,']+"
+          "value": "[-\\p{L}:,']+",
+          "flags": "u"
         }
       ]
     },
@@ -2782,7 +2806,8 @@
           "type": "IMMEDIATE_TOKEN",
           "content": {
             "type": "PATTERN",
-            "value": "[^\\p{Cc}<>\"|?*]+"
+            "value": "[^\\p{Cc}<>\"|?*]+",
+            "flags": "u"
           }
         },
         {
