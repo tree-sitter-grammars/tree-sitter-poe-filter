@@ -5,11 +5,12 @@
       "name": "poe_filter",
       "camelcase": "PoEFilter",
       "scope": "text.poe_filter",
-      "path": ".",
       "file-types": [
         "filter"
       ],
-      "highlights": "queries/highlights.scm"
+      "highlights": "queries/highlights.scm",
+      "class-name": "TreeSitterPoEFilter",
+      "title": "PoE item filter"
     }
   ],
   "metadata": {
@@ -23,7 +24,8 @@
       }
     ],
     "links": {
-      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-poe-filter"
+      "repository": "https://github.com/tree-sitter-grammars/tree-sitter-poe-filter",
+      "funding": "https://github.com/sponsors/ObserverOfTime"
     }
   }
 }
