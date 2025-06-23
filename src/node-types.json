@@ -157,6 +157,16 @@
           }
         ]
       },
+      "gem": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "string",
+            "named": true
+          }
+        ]
+      },
       "modifier": {
         "multiple": true,
         "required": false,
@@ -482,7 +492,8 @@
   },
   {
     "type": "comment",
-    "named": true
+    "named": true,
+    "extra": true
   },
   {
     "type": "disable",

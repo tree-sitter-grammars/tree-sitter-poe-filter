@@ -152,6 +152,24 @@ Minimal
       (string))
     (continue)))
 
+============
+Alternatives
+============
+
+Hide
+  TransfiguredGem False
+  TransfiguredGem "Leap Slam"
+
+-------------
+
+(filter
+  (block
+    (condition
+      (name)
+      (boolean))
+    (condition
+      (name)
+      gem: (string))))
 
 ======
 Import

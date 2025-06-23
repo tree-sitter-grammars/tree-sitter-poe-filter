@@ -1089,6 +1089,28 @@
                   "type": "ALIAS",
                   "content": {
                     "type": "STRING",
+                    "value": "MemoryStrands"
+                  },
+                  "named": true,
+                  "value": "name"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "_space"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "_quantity"
+                }
+              ]
+            },
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "ALIAS",
+                  "content": {
+                    "type": "STRING",
                     "value": "Mirrored"
                   },
                   "named": true,
@@ -1428,8 +1450,21 @@
                   "name": "_space"
                 },
                 {
-                  "type": "SYMBOL",
-                  "name": "boolean"
+                  "type": "CHOICE",
+                  "members": [
+                    {
+                      "type": "SYMBOL",
+                      "name": "boolean"
+                    },
+                    {
+                      "type": "FIELD",
+                      "name": "gem",
+                      "content": {
+                        "type": "SYMBOL",
+                        "name": "string"
+                      }
+                    }
+                  ]
                 }
               ]
             },
@@ -1452,6 +1487,28 @@
                 {
                   "type": "SYMBOL",
                   "name": "boolean"
+                }
+              ]
+            },
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "ALIAS",
+                  "content": {
+                    "type": "STRING",
+                    "value": "UnidentifiedItemTier"
+                  },
+                  "named": true,
+                  "value": "name"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "_space"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "_quantity"
                 }
               ]
             },
@@ -1496,6 +1553,28 @@
                 {
                   "type": "SYMBOL",
                   "name": "_quantity"
+                }
+              ]
+            },
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "ALIAS",
+                  "content": {
+                    "type": "STRING",
+                    "value": "ZanaMemory"
+                  },
+                  "named": true,
+                  "value": "name"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "_space"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "boolean"
                 }
               ]
             }
@@ -2918,5 +2997,6 @@
   "inline": [
     "_operator"
   ],
-  "supertypes": []
+  "supertypes": [],
+  "reserved": {}
 }

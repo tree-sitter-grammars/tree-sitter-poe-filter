@@ -239,6 +239,11 @@ module.exports = grammar({
         $._quantity
       ),
       seq(
+        alias('MemoryStrands', $.name),
+        $._space,
+        $._quantity
+      ),
+      seq(
         alias('Mirrored', $.name),
         $._space,
         $.boolean
@@ -296,13 +301,23 @@ module.exports = grammar({
       seq(
         alias('TransfiguredGem', $.name),
         $._space,
-        $.boolean
+        choice(
+          $.boolean,
+          field('gem', $.string)
+        )
       ),
       seq(
         alias('UberBlightedMap', $.name),
         $._space,
         $.boolean
       ),
+      // NOTE: PoE2-only
+      seq(
+        alias('UnidentifiedItemTier', $.name),
+        $._space,
+        $._quantity
+      ),
+      // NOTE: PoE2-only
       seq(
         alias('WaystoneTier', $.name),
         $._space,
@@ -312,6 +327,11 @@ module.exports = grammar({
         alias('Width', $.name),
         $._space,
         $._quantity
+      ),
+      seq(
+        alias('ZanaMemory', $.name),
+        $._space,
+        $.boolean
       ),
     ), $._eol),
 
